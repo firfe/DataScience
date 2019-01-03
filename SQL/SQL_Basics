@@ -1,0 +1,26 @@
+Question 1:
+Select 
+	trip_id, 
+    duration 
+From 
+	trips 
+Where 
+	duration>500 
+Order By duration Desc;
+
+Question 2:
+Select 
+	* 
+From 
+	stations 
+Where 
+	station_id=84;
+
+Question 3:
+Select 
+	zip, 
+	mintemperaturef 
+From 
+	weather 
+Where 
+	zip=94301;

@@ -1,0 +1,33 @@
+1.
+Select
+	zip,
+	Max(maxtemperaturef)
+From
+	weather
+Group By zip
+
+Answer: max temp of 134 at 94063
+
+2.
+Select
+	start_station,
+	Count(start_station)
+From 
+	trips
+Group By start_station;
+
+3.
+Select
+	Min(duration) as minimumduration
+From 
+	trips
+    
+Answer: 60
+
+4.
+Select
+	end_station,
+	AVG(duration) as Average_Time
+From 
+	trips
+Group by 1;
