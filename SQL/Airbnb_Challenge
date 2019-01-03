@@ -1,0 +1,45 @@
+1.
+Select 
+	*
+From listing
+Where
+	price = (Select Max(price) from listing)
+    
+I use this to check for the max listing price from the data provided and return all the information for the max listing price.
+Answer: 晨斌 is the most expensive listing at 69400 at the ChaoYang neighbourhood. 
+
+Select 
+	*
+From listing
+Order by price DESC
+
+I use this to help see the most expensive listings and to see if that price is consistent over a large data set
+Answer: Prices fluctuate greatly at the most expensive pricings.
+
+Select 
+	AVG(price)
+From listing
+
+I use this to help me understand what the average price is, which  is 597.39. This shows me that the variance of the listing price
+is great.
+    
+2.
+Select 
+	neighbourhood,
+	Count(neighbourhood)
+From listing
+Group by 1
+Order by 2 Desc
+
+
+Answer: Chaoyang is the most frequent neighbourhood to pop up in the listings by over 3 times the second place position of DongCheng.
+    
+3.
+Select 
+	host_name,
+	Count(host_name)
+From listing
+Group by 1
+Order by Count(host_name) DESC
+
+兴伟 has the most listings

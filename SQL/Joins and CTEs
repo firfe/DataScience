@@ -44,3 +44,20 @@ On
 	s.start_station = ss.name
 Group By 1,2
 Order By ss.dockcount DESC
+
+4.
+Select
+	v.start_station,
+	s.events,
+	v.start_date,
+	Max(duration) as longest_duration
+From
+	trips v
+Join
+	weather s
+On
+	v.zip_code = s.zip
+Where
+	s.events = 'Rain'
+Group By 1,2,3
+Order By longest_duration DESC
