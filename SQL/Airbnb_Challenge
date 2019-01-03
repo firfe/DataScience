@@ -21,7 +21,7 @@ Select
 From listing
 
 I use this to help me understand what the average price is, which  is 597.39. This shows me that the variance of the listing price
-is great.
+is quite large.
     
 2.
 Select 
@@ -30,7 +30,6 @@ Select
 From listing
 Group by 1
 Order by 2 Desc
-
 
 Answer: Chaoyang is the most frequent neighbourhood to pop up in the listings by over 3 times the second place position of DongCheng.
     
@@ -42,4 +41,22 @@ From listing
 Group by 1
 Order by Count(host_name) DESC
 
-兴伟 has the most listings
+兴伟 has the most listings and 50 more then the next. 
+
+Select 
+	host_name,
+	AVG(price)
+From listing
+Where
+	host_name = '兴伟'
+Group By 1
+Order by AVG(price) DESC
+
+I used this query to determine what was the average price of the rooms that 兴伟 provides, which comes to around 472.82
+
+Select 
+	room_type,
+	Count(room_type)
+From listing
+Group By 1
+Order By room_type ASC
