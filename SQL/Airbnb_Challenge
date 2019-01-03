@@ -34,6 +34,9 @@ Order by 2 Desc
 Answer: Chaoyang is the most frequent neighbourhood to pop up in the listings by over 3 times the second place position of DongCheng.
     
 3.
+    The data set I have chosen to analyze does not give me information in regards to "What time of year is the cheapest time to go to your city? What about the busiest?"
+
+4.
 Select 
 	host_name,
 	Count(host_name)
@@ -57,6 +60,9 @@ I used this query to determine what was the average price of the rooms that å…´ä
 Select 
 	room_type,
 	Count(room_type)
+    AVG(price)
 From listing
 Group By 1
 Order By room_type ASC
+
+For this data set, entire homes are the most common room type at 13344, followed by private rooms at 8370. Shared rooms is the leasst common at 1438. The averages prices are as expected, with homes being around 750, private rooms around 418 and shared at 228, most likely corresponding to how big of a room you get for the price. 
