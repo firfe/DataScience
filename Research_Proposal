@@ -1,0 +1,38 @@
+I will be using the first example and modify it to becoming more of a general
+"How do we increase the number of recuits to the army?" to make the problem
+seem more realistic.
+
+The Problem
+
+How do we increase the number of fresh recruits to the army?
+A constant flow of fresh recuits is always important to have for the army.
+As older soldiers and casulties for the army increase over time, it is 
+important that there are always new and capable soldiers to replace them.
+Based on the data, general recruitment ages for new recruits are around
+the ages of 16-20. We also know that video games is also very popular and frequently 
+visited topic for those within that age group. So how do we make recruiting in this 
+age group more efficient?
+
+The Potential Solution
+
+Create ad campaigns and events that are tailored towards video games but hosted
+by the army. 
+
+The method of testing the solution
+
+We will create a few ad campaigns and live events (tournaments) which are
+for video games that are of the "shooter" or "fps" variety. Over the course of
+half a year, we will monitor three main variables being: the number of applicants 
+to the army, the age of the people that applies (making special note if its of the 
+targeted age group), and the amount of interest the live events have. This is an A/B 
+manipulation test where we have a time frame where we do not have the ad campaigns/live 
+events and where we do have them.
+
+If the number of applicants of the specified age group (over the course of the half year 
+where the ad campaigns are effective) increases by 10%, then we can conclude that the ad 
+campaigns are successful and that video games is a great media to connect, expose and recruit
+future candidits to the army. It is also possible that the ad campaign is more effective for
+those outside the targeted age group, and as such if there is a general 10% increase to the 
+total applicants then it can also be considered a success. If the recruitment rate is not
+at the desired level, it is advised to wait till the end of the next quarter before deciding
+its effectivness. If the rate does not increase then stop the ad campaigns. 
