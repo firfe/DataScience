@@ -1,0 +1,23 @@
+The amount a person will spend on a given site in the next 24 months.
+Regression as the amount a person can spend ranged from zero to infinite. 
+
+What color car someone is going to buy.
+Classification as there are a finite amount of colors.
+
+How many children a family will have.
+Regression or Classification both work for this scenerio. 
+Normally a family will have roughly 0-2 children but there are also outlier
+cases where families will have up to 6 or even 8 siblings. 
+
+If someone will sign up for a service.
+Classification because the answer will be either yes or no, and will
+have a probability attached.
+
+The number of times someone will get sick in a year.
+Regression because it is possible to become sick an infinite amount of times.
+
+The probability someone will get sick in the next month.
+Classification because we are testing for the probability of someone becoming sick. 
+
+Which medicine will work best for a given patient.
+Classification as there are a finite amount of medicines.
