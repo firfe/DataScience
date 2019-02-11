@@ -1,0 +1,13 @@
+DRILL:
+Let's say we work at a credit card company and we're trying to figure out if people are going to pay their bills on time. We have everyone's purchases, split into four main categories: groceries, dining out, utilities, and entertainment. What are some ways you might use KNN to create this model? What aspects of KNN would be useful? Write up your thoughts in submit a link below.
+
+Answer:
+With the four main categories I am also assuming that it comes with the dates of said purchases and the amount paid per purchase.
+We can use KNN to create a model that is based on the cost of the purchase, and the date/frequency of the purchases as the X value
+and whether they have paid the bill or not as the Y. Using this will give us a KNN model which will show us the range and frequency of
+money that will generally lead towards a customer paying off their bill.
+
+KNN is a great way to tell when a piece of data fits towards a certain pattern, and if there is sufficient amounts of data along
+a period of time, it'll be easier for the model to predict when something changes that pattern. As such I think KNN is best used
+in studying specific cases, such as looking at behaviours of an individual or a group and detecting offsets. While it is more
+difficult for it to be used to compare two different individuals in terms of things such as income spending or search results. 
