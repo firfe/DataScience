@@ -1,0 +1,74 @@
+For each, identify which supervised learning method(s) would be best for addressing that particular problem. Explain your reasoning and discuss your answers with your mentor.
+
+Over the course of Unit 2/3, I learned various methods in dealing with data, ranging from feature selection, evaluation techniques and modeling. Here I plan to write down my basic summary and understanding of each type in hopes of gaining a better understanding of all of them.
+
+Feature Selection:
+    Select K Best: Finds which feature has the largest colineality with the target and lists them from greatest to least. Good for finding which features can give the most insight on the target.
+    
+    PCA: Combines features together based on their colinearlity and discards variance. Good for reducing the number of features but can cost
+    variance in data.
+
+Models:
+    Regression-
+        Naive Bayes: Mostly used in filters/text categorization. It allows us to use "the probability of y given x equals the probability of y times the probability of x given y divided by the probability of x" to give insight on the data and help give us assumptions on whether or not a data can be classified under a certain category.
+        
+        Linear Regression: Works by trying to find the line of best fit which encompasses the largest majority of the data. This is then used to detect how likely a certain data is to be significant based on how far it is from this line.
+        
+        Ridge Regression: Same as Linear Regression, but it alters the line by first attaching weights on the data based on how far away it is from the lambda value given to it. This is useful in the sense that it helps focuses the model towards a certain area of the data.
+        
+        Lasso Regression: Same as Linear Regression, but it alters the line by first getting rid of certain data points if the data is past a given lambda value. This works as a way of feature selection as well since it gets rid of those datas completely from the model. Helps improve run times but can get rid of variance and cause overfitting if the lambda is too extreme.
+    
+    Classification-
+        KNN Regression: Is a model that helps predicts new data points based on how close it is to 'x' number of data points, via a voting system. 
+        
+        Decision Tree: Is a binary tree that attempts to find the cut off of where features can be determined to be a hit or miss.
+        
+        Gradient Tree Boosting: Same as a decision tree but builds off of the same tree 'x' amount of times while forwarding the residual into the next tree. Helps combat overfitting naturally, but if the data used isn't varied enough the results will suffer greatly. 
+        
+        Logistic Regression: Is basically linear regression but used when the target is a categorical/binary variable.
+        
+        Support Vector Machine: Uses support vectors to find the middle ground between two groups of data.
+        
+     Both-
+                 
+        Random Decision Tree: Same as a decision tree but is done multiple times with different value selected at the leaves. These results are then aggregated together to create the final model.
+
+Evaluation:
+
+    HoldOut: Divides the data into two portions, a test and a training set which can be used to test the models for overfitting and accuracy.
+    
+    Cross Validation: Similar to hold outs but divides the data into equal portions, then runs a accuracy check on them based on the model.
+    
+    Confusion Matrix: Simple method used to see how many times the model correctly identifies the data and vice versa.
+    
+    Classification Report: A more detailed version of the confusion matrix, but gives insight on any false negatives and false positives the model has as well. 
+    
+    ---------------------------------------------------------------------------------------------------------
+
+1.Predict the running times of prospective Olympic sprinters using data from the last 20 Olympics.
+Linear Regression as they are great for predicting continuous values based on past data. Because the data used here is are individual times of the sprinters, there is also low multi-collinearity in the features which helps make linear regression more accurate.
+
+2.You have more features (columns) than rows in your dataset.
+Random Forest Tree because it will let us to test all the different types of features and find the ones that are most relevant towards making the model.
+
+3.Identify the most important characteristic predicting likelihood of being jailed before age 20.
+Select K Best because it helps with selecting features that has the most relations to the outcome variable.  
+
+4.Implement a filter to “highlight” emails that might be important to the recipient
+Naive Bayes because it is commonly used as a way to filter text.
+SVM is also good for filtering texts.
+
+5.You have 1000+ features.
+PCA would be great because it'd help with lowering the amount of features based on the co-linearity and based on the number of features, there is a fairly high probability of there being redundant or similar features.
+
+6.Predict whether someone who adds items to their cart on a website will purchase the items.
+Logistic regression as it can be used to detect the probability of binary results (buying or not buying).
+
+7.Your dataset dimensions are 982400 x 500
+Anything. With so many rows and a sizable amount of features, all models could technically work. Decision Tree based models will take a long time to work through in this case however without feature selection. 
+
+8.Identify faces in an image.
+Naive Bayes is pretty good in facial recognition as it deals with probability. 
+
+9.Predict which of three flavors of ice cream will be most popular with boys vs girls.
+KNN Regression because data is limited and this model is most similar to human decision making (as in weighing pros/cons and then choosing the one with the most pros)
