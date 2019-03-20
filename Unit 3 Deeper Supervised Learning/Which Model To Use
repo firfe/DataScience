@@ -50,9 +50,11 @@ Linear Regression as they are great for predicting continuous values based on pa
 
 2.You have more features (columns) than rows in your dataset.
 Random Forest Tree because it will let us to test all the different types of features and find the ones that are most relevant towards making the model.
+(Logistic Regression)
 
 3.Identify the most important characteristic predicting likelihood of being jailed before age 20.
 Select K Best because it helps with selecting features that has the most relations to the outcome variable.  
+(Random Forest)
 
 4.Implement a filter to “highlight” emails that might be important to the recipient
 Naive Bayes because it is commonly used as a way to filter text.
@@ -72,3 +74,4 @@ Naive Bayes is pretty good in facial recognition as it deals with probability.
 
 9.Predict which of three flavors of ice cream will be most popular with boys vs girls.
 KNN Regression because data is limited and this model is most similar to human decision making (as in weighing pros/cons and then choosing the one with the most pros)
+(Logistic Regression)
